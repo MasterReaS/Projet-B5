@@ -1,65 +1,73 @@
 :root {
-  --dark : #212121;
-  --grey : #6c757d;
-  --light : #f8f9f8;
+  --dark: #212121;
+  --grey: #6c757d;
+  --light: #f8f9fa;
+  --montserrat : 'Montserrat', Arial, sans-serif;
+  --baskerville: 'Libre Baskerville', Arial, sans-serif;
 }
 
 html {
   box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a, a:hover{
+  color :var(--dark);
+  text-decoration: none;
+}
+
+.font-baskerville {
+ font-family: var(--baskerville)
+}
+
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: var( --montserrat);
 }
 
-header {
-  text-align: center;
-}
+/* header */
 
-header h1 {
-  font-family: 'Libre Baskerville', serif, Arial;
-  font-weight: 700;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+/* Navigation */
 
 nav li {
   display: inline;
 }
 
 nav a {
-  text-decoration: none;
   padding: 4px 10px;
-  color : var(--grey);
+  color: var(--grey);
 }
 
-nav a:hover, nav .active {
+header a:hover,
+nav a:hover, 
+nav .active {
   color: var(--dark);
 }
 
-nav a:hover header {
-  color: var(--dark)
+.navbar-container {
+  padding: 5px 0;
 }
 
-h2, h1, h3, h4, h5, h6 {
-   font-family: 'Libre Baskerville', serif, Arial;
+/* footer */
+
+footer {
+  background-color: #363b41;
 }
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
+/* main */
+
+
+/* css Diégo */
+
+.carousel {
+
 }
 
-.card {
-  
-  margin-left: 20px;
-  margin-bottom: 20px;
-  width: 31% !important;
-  box-shadow: 5px 5px 5px rgb(214, 213, 213);
-}
+/* css Joé */
 
 .card-person {
   width: 16%;
@@ -79,3 +87,41 @@ h2, h1, h3, h4, h5, h6 {
   
 }
 
+/* css Carlos */
+
+.container-contact {
+
+}
+
+
+/* -------- css Ricardo ---------- */
+
+main {
+  min-height: 20vh;
+  
+}
+
+aside {
+  min-height: 20vh;
+ 
+}
+
+/* --- card ---- */
+
+.card-title {
+    font-family: var(--baskerville)
+}
+
+/* --- search aside ---- */
+
+.search-group .input-group-append .btn-outline-secondary{
+    border: 1px solid #ced4da;
+        border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* --- social aside ---- */
+
+.social_section ul li {
+padding: 0 5px ;
+}
