@@ -87,6 +87,7 @@ footer {
 .card-body > .details > p {
   color: var(--grey);
   text-transform: bold;
+  font-size: 0.8rem;
 }
 
 .card-body > .details {
@@ -94,7 +95,6 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 
 /* css Carlos */
 
@@ -105,28 +105,23 @@ footer {
 
 /* -------- css Ricardo ---------- */
 
-main {
-  min-height: 20vh;
-  
-}
-
-aside {
-  min-height: 20vh;
- 
-}
 
 /* --- card ---- */
 
 .card-title {
-    font-family: var(--baskerville)
+  font-family: var(--baskerville)
+}
+
+.card-popularPost .card-text > p {
+ font-size: 0.8rem;
 }
 
 /* --- search aside ---- */
 
 .search-group .input-group-append .btn-outline-secondary{
-    border: 1px solid #ced4da;
-        border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  border: 1px solid #ced4da;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* --- social aside ---- */
